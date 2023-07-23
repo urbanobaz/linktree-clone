@@ -19,19 +19,18 @@ const WordFade: React.FC<WordFadeProps> = ({ words }) => {
   const length = words.length;
 
   useEffect(() => {
-    if (wordNumber) {
-      if (wordNumber < length) {
-        setTimeout(() => {
-          setWordOnDisplay(words[wordNumber]);
-        }, 1500);
-      } else if (wordNumber === length) {
+    console.log(wordNumber, length, words[wordNumber]);
+    if (length > wordNumber) {
+      setTimeout(() => {
+        setWordOnDisplay(words[wordNumber]);
+        setWordNumber(wordNumber + 1);
+      }, 1500);
+    } else if (wordNumber === length) {
+      setTimeout(() => {
         setWordNumber(0);
-        setTimeout(() => {
-          setWordOnDisplay(words[wordNumber]);
-        }, 10000);
-      }
+      }, 10000);
     }
-  }, [wordNumber]);
+  }, [wordOnDisplay, wordNumber, length, words]);
 
   return (
     <div>

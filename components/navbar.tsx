@@ -25,7 +25,7 @@ const Links = [
 
 const Navbar = () => {
   return (
-    <div className="w-full max-w-[1526px] pt-16 sticky top-0 z-10">
+    <div className="w-full max-w-[1526px] pt-16">
       <nav className="flex flex-row justify-between bg-white w-full h-20 rounded-full">
         <div className="flex flex-col justify-center">
           <div className="flex ml-8">
