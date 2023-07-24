@@ -2,6 +2,10 @@ import { cn } from "@/app/helpers/utils";
 import Navbar from "@/components/navbar";
 import WordFade from "@/components/wordFade";
 import { Black_Han_Sans } from "next/font/google";
+import Motion from "@/components/motion";
+import Motion2 from "@/components/motion2";
+import Motion3 from "@/components/motion3";
+import Motion4 from "@/components/motion4";
 
 const black_hans = Black_Han_Sans({
   subsets: ["latin"],
@@ -44,9 +48,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:flex justify-center my-auto w-full">
-              <div className="flex justify-center w-full pb-8 px-20">
-                <figure className="bg-white rounded-lg h-[450px] w-1/2"></figure>
-              </div>
+              <Motion />
             </div>
           </div>
         </div>
@@ -55,7 +57,7 @@ export default function Home() {
           <section className="flex w-full max-w-[1526px] py-28">
             <div className="flex justify-center w-full px-8">
               <div className="hidden lg:flex justify-center my-auto w-full">
-                <figure className="bg-white rounded-lg h-[450px] w-1/2"></figure>
+                <Motion2 />
               </div>
               <div className="flex flex-col justify-center my-auto w-full">
                 <h2
@@ -102,7 +104,7 @@ export default function Home() {
                 </button>
               </div>
               <div className="hidden lg:flex justify-center my-auto w-full">
-                <figure className="bg-white rounded-lg h-[450px] w-1/2"></figure>
+                <Motion3 />
               </div>
             </div>
           </section>
@@ -112,7 +114,7 @@ export default function Home() {
           <section className="flex w-full max-w-[1526px] py-28">
             <div className="flex justify-center w-full px-8">
               <div className="hidden lg:flex justify-center my-auto w-full">
-                <figure className="bg-[#502274] rounded-lg h-[450px] w-1/2"></figure>
+                <Motion4 />
               </div>
               <div className="flex flex-col justify-center my-auto w-full">
                 <h2
@@ -128,7 +130,7 @@ export default function Home() {
                   videos, music, podcast, events and more. It all comes together
                   in a link in bio landing page designed to convert.
                 </p>
-                <button className="bg-black w-[200px] p-4 rounded-full text-white">
+                <button className="bg-[#E9C0E9] w-[200px] p-4 rounded-full text-black">
                   Get started for free
                 </button>
               </div>
@@ -153,6 +155,12 @@ export default function Home() {
                   "sellers",
                 ]}
               />
+            </div>
+          </div>
+
+          <div className="flex self-center w-full py-28">
+            <div className="bg-pink-200 w-full h-full">
+              <p>Images</p>
             </div>
           </div>
         </div>
