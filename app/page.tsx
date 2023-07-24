@@ -6,6 +6,8 @@ import Motion from "@/components/motion";
 import Motion2 from "@/components/motion2";
 import Motion3 from "@/components/motion3";
 import Motion4 from "@/components/motion4";
+import Images from "@/components/images";
+import Boxes from "@/components/boxes";
 
 const black_hans = Black_Han_Sans({
   subsets: ["latin"],
@@ -152,6 +154,8 @@ export default function Home() {
                   "creators",
                   "merch sellers",
                   "writers",
+                  "fitness coaches",
+                  "DJs",
                   "sellers",
                 ]}
               />
@@ -159,9 +163,11 @@ export default function Home() {
           </div>
 
           <div className="flex self-center w-full py-28">
-            <div className="bg-pink-200 w-full h-full">
-              <p>Images</p>
-            </div>
+            <Images />
+          </div>
+
+          <div className="flex w-full max-w-[1526px] py-28 self-center">
+            <Boxes />
           </div>
         </div>
       </div>
